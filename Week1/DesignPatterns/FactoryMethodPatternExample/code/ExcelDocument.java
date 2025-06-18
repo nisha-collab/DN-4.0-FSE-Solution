@@ -1,4 +1,4 @@
-package Week1.DesignPatterns.FactoryMethodPatternExample;
+package Week1.DesignPatterns.FactoryMethodPatternExample.code;
 
 public class ExcelDocument implements Document {
     public void open() {

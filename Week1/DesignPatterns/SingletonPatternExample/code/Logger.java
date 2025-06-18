@@ -1,10 +1,10 @@
-package Week1.DesignPatterns.SingletonPatternExample;
+package Week1.DesignPatterns.SingletonPatternExample.code;
 
 public class Logger {
     private static Logger instance;
 
     private Logger() {
-        System.out.println("Logger initialized.");
+        System.out.println("Logger initialized");
     }
 
     public static Logger getInstance() {
@@ -18,5 +18,3 @@ public class Logger {
         System.out.println("Log: " + message);
     }
 }
-
-
