@@ -29,11 +29,18 @@
       <version>5.11.0</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- Spring Core -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.3.33</version>
+    </dependency>
   </dependencies>
 
   <build>
     <plugins>
-      <!-- JUnit Platform support -->
+      <!-- JUnit Platform (Surefire) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
@@ -42,8 +49,3 @@
           <includes>
             <include>**/*Test.java</include>
           </includes>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-</project>
