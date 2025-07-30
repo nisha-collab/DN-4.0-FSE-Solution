@@ -1,0 +1,80 @@
+.details-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.st2, .v1, .mystyle1 {
+  flex: 1;
+  padding: 20px;
+  margin: 0 10px;
+  min-width: 250px;
+  max-width: 300px;
+  position: relative;
+}
+
+.st2::after, .v1::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -10px;
+  width: 3px;
+  background-color: green;
+}
+
+.mystyle1 { order: 1; }
+.st2 { order: 2; }
+.v1 { order: 3; }
+
+.st2 {
+    border-left: 3px solid green;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+.v1 {
+    border-left: 3px solid green;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+h1 {
+  color: black;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 1em;
+  color: #555;
+}
+
+p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mystyle1 h3:first-of-type, .mystyle1 h4:first-of-type {
+  margin-top: 20px;
+}
+
+.v1 h3:first-of-type, .v1 h4:first-of-type {
+  margin-top: 20px;
+}
