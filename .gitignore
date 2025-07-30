@@ -1,3 +1,4 @@
+# Common ignored files
 /.idea
 /target
 *.iml
@@ -6,3 +7,4 @@
 *.jar
 *.war
 .vscode/
+log/
